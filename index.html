@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гульнара Пегашева — персональный стилист | Пермь и онлайн</title>
+  <meta name="description" content="Персональный стилист Гульнара Пегашева. Разбор гардероба, шопинг-сопровождение, капсула на сезон, карта стиля. Пермь и онлайн.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Шапка ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Логотип: монограмма + имя. Когда будет фирменный лого-файл,
+           замените <span class="logo__mark">GP</span> на <img src="logo.svg" alt="Логотип"> -->
+      <a href="#hero" class="logo" aria-label="Гульнара Пегашева — на главную">
+        <span class="logo__mark" aria-hidden="true">GP</span>
+        <span class="logo__text">Гульнара <em>Пегашева</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#services" class="nav__link">Услуги и цены</a>
+        <a href="#portfolio" class="nav__link">Портфолио</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+        <a href="#contacts" class="btn btn--accent nav__cta">Записаться</a>
+      </nav>
+
+      <a href="#contacts" class="btn btn--accent header__cta">Записаться</a>
+
+      <button class="burger" id="burger" type="button"
+              aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Первый экран ===== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Персональный стилист · Пермь и онлайн</p>
+          <h1 class="hero__title">
+            Гардероб, в котором<br><em>дышится легко</em>
+          </h1>
+          <p class="hero__lead">
+            Услуги стилиста в Перми и онлайн.
+Подчеркну сильные стороны. У тебя будет рабочий гардероб с уникальным стилем, который говорит за тебя
+          </p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--accent">Услуги и цены</a>
+            <a href="#portfolio" class="btn btn--ghost">Смотреть работы</a>
+          </div>
+          <p class="hero__note">Первая встреча — знакомство и выявление запросов</p>
+        </div>
+
+        <!-- Журнальная рамка для портретного фото -->
+        <figure class="hero__photo reveal">
+          <div class="frame frame--portrait">
+            <img src="stylist.jpg"
+                 alt="Портрет стилиста Гульнары Пегашевой">
+          </div>
+          <figcaption>Гульнара Пегашева · стилист · разбор и стилизация гардероба · шопинг-сопровождение</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Обо мне ===== -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__photo reveal">
+          <div class="frame frame--square">
+            <img src="obomne.jpg"
+                 alt="">
+          </div>
+          <p class="frame__caption">Gulya Pegasheva · stylist · wardrobe analysis and styling</p>
+        </div>
+        <div class="about__content reveal">
+          <p class="eyebrow">Обо мне</p>
+          <h2 class="section-title">Не «модно», а <em>твой уникальный стиль</em></h2>
+          <p>
+            <br> Меня зовут Гульнара, я персональный стилист из Перми. Работаю лично и онлайн —
+            Zoom и Telegram, поэтому география не имеет значения. 
+          </p>
+          <p>
+            Раскрываю внутреннюю силу через стиль, создаю работающий гардероб.
+
+Не гонюсь за трендами, а использую их для усиления внешности и преображения так, чтобы подчеркнуть достоинства.
+          </p>
+          <p>
+            Методы работы:
+индивидуальность и внешние природные данные -
+стилевой вектор, цветотип, фигура.
+          </p>
+          <ul class="about__facts">
+            <li><strong>Лично</strong> Пермь</li>
+            <li><strong>Онлайн</strong> Zoom · Telegram</li>
+            <li><strong>Сопровождение</strong> 2 недели после услуги</li>
+            <li><strong>Бронь даты</strong> предоплата 50%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Услуги и цены ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Услуги и цены</p>
+          <h2 class="section-title">Что вы получите в итоге?</h2>
+          <p class="section-note">
+            Я найду ваши сильные стороны и достоинства внешности. Усилю их с помощью стиля. Выстрою гардероб под ваш образ жизни с учетом запроса.
+Грамотно-выстроенный гардероб прибавляет  уверенность и самоценность, помогает добиваться поставленных целей. И наслаждаться своим отражением в зеркале!
+            Все встречи проходят онлайн — в Zoom или Telegram (видеозвонок).
+            Бронирование даты — по предоплате 50%.
+          </p>
+        </div>
+
+        <div class="services__list" id="servicesList">
+
+          <!-- ===== Консультация ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">01</span>
+              <span class="service__name">Консультация</span>
+              <span class="service__meta">1-2 часа · 5 000 ₽</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Онлайн-встреча на 1-2 часа: знакомимся, разбираем ваши запросы и боли
+                  по гардеробу, определяем типаж и цветовую палитру, формулируем
+                  стратегию — что менять, что докупать, от чего отказаться.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">1 час</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Консультация (1 час)">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Разбор гардероба ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">02</span>
+              <span class="service__name">Разбор гардероба</span>
+              <span class="service__meta">4 часа · 10 000 ₽
+                <br> +1000 ₽ за каждый 
+                <br>последующий час
+              </span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <ol class="service__steps">
+                  <li>
+                    <strong>Анкетирование.</strong>
+                    Выявляем запрос на текущий период.
+                  </li>
+                  <li>
+                    <strong>Сортировка.</strong>
+                    На встрече разбираем один сезон: осень–зима или весна–лето.
+                    Смотрим одежду, обувь, сумки, аксессуары и верхнюю одежду.
+                    Делим вещи на категории: оставляем, дорабатываем, убираем.
+                    Оставляем то, что подходит под запрос, актуально и хорошо сидит.
+                    Убираем неактуальное — устаревшее, не подходящее по крою, цвету,
+                    фасону, посадке и стилю.
+                  </li>
+                  <li>
+                    <strong>Стайлинг.</strong>
+                    Составляю комплекты из имеющихся вещей и фотографирую образы
+                    на вас. Количество новых образов зависит от вашего гардероба
+                    и результатов первого этапа — их может быть от 0 до 70.
+                  </li>
+                  <li>
+                    <strong>Шопинг-лист.</strong>
+                    Составляю список вещей, которые стоит докупить, чтобы гардероб
+                    стал функциональным, стильным и отражал вашу личность.
+                  </li>
+                  <li>
+                    <strong>Сопровождение.</strong>
+                    В течение двух недель остаюсь на связи и отвечаю на вопросы,
+                    которые остались по гардеробу.
+                  </li>
+                </ol>
+                <p class="service__extra">
+                  Разбор гардероба — это не про «выкинуть вещи», а о том, чтобы найти
+                  новые стильные сочетания и свежее вдохновение. Также даю рекомендации,
+                  как увидеть свой персональный стиль, подчеркнуть достоинства и больше
+                  не совершать импульсивных ненужных покупок.
+                </p>
+                <p class="service__fit"><strong>Кому подходит:</strong></p>
+                <ul class="service__fit-list">
+                  <li>тем, кто не знает, как комбинировать вещи и не видит сочетаний;</li>
+                  <li>тем, кто хочет избавиться от лишнего, но не уверен, что оставить, а что убрать;</li>
+                  <li>тем, кто часто обновляет гардероб и хочет продолжать носить как минимум 50% вещей;</li>
+                  <li>тем, кто хочет познакомиться с работой стилиста перед шопингом.</li>
+                </ul>
+                <div class="service__footer">
+                  <span class="service__detail">4 часа · далее 1 000 ₽/час</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Разбор гардероба (4 часа)">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Шопинг-сопровождение ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">03</span>
+              <span class="service__name">Шопинг-сопровождение</span>
+              <span class="service__meta">4 часа · 10 000 ₽
+                <br> +1000 ₽ за каждый 
+                <br>последующий час
+              </span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <ol class="service__steps">
+                  <li>
+                    <strong>Консультация.</strong>
+                    Онлайн-встреча в удобном формате, на которой определяем запрос.
+                    От этого зависит результат всего сотрудничества.
+                  </li>
+                  <li>
+                    <strong>Прешопинг.</strong>
+                    Подготавливаю капсулы и подбираю вещи под запрос.
+                    Ваше участие не требуется.
+                  </li>
+                  <li>
+                    <strong>Шопинг.</strong>
+                    Встречаемся в согласованное время и идём по заранее спланированному
+                    маршруту. Все позиции отложены заранее и подготовлены в примерочной —
+                    вам остаётся только примерка и покупка.
+                  </li>
+                  <li>
+                    <strong>Сопровождение.</strong>
+                    В течение двух недель остаюсь на связи онлайн и отвечаю на вопросы
+                    по оказанной услуге.
+                  </li>
+                </ol>
+                <p class="service__extra">
+                  Это не прогулка по магазинам, а продуманная стратегия: чёткий маршрут,
+                  план и бюджет, в который необходимо уложиться.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">4 часа · далее 1 000 ₽/час</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Шопинг-сопровождение (4 часа)">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Разбор гардероба онлайн ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">04</span>
+              <span class="service__name">Разбор гардероба онлайн</span>
+              <span class="service__meta">3–4 часа · 10 000 ₽
+                <br> +1000 ₽ за каждый
+                <br> последующий час
+              </span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Тот же разбор, только по видеосвязи: вы показываете вещи, я направляю
+                  процесс. В стоимость работы входит <strong>до 70 единиц одежды</strong>.
+                  4 часа.
+                  
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">3–4 часа · до 70 единиц одежды</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Разбор гардероба онлайн">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Онлайн-шопинг ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">05</span>
+              <span class="service__name">Онлайн-шопинг</span>
+              <span class="service__meta">10 000 ₽</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Подбираю вещи на сайтах брендов под ваш запрос и бюджет, типаж внешности и фигуры.
+                  В стоимость входит сбор <strong>гардеробной капсулы из 20–25 единиц,</strong>
+                  включая обувь и аксессуары со ссылками на конкретные позиции. 
+                  Во время примерок я на связи онлайн. Время обговаривается заранее
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">Капсула 20–25 единиц</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Онлайн-шопинг">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Подбор образа на мероприятие ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">06</span>
+              <span class="service__name">Подбор образа на мероприятие</span>
+              <span class="service__meta">5 000 ₽</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Свадьба, важное событие, презентация, корпоратив. Подбираю образ
+                  под ваш запрос, внешность и дресс-код. В комплекте: одежда, обувь,
+                  аксессуары и референс макияжа. 1-3 образа на выбор.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">1-3 полных образа</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Подбор образа на мероприятие">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Карта стиля ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">07</span>
+              <span class="service__name">Карта стиля</span>
+              <span class="service__meta">10 000 ₽</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Развернутая персональная презентация с разбором вектора стиля по вашей внешности, типажу фигуры, цветотипу. Рекомендации с наглядными примерами. Карта стиля поможет разобраться в деталях, на которые можно опираться и собирать образы самостоятельно, которые подойдут именно вам.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">Персональный документ</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Карта стиля">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Стилизация фотосессий ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">08</span>
+              <span class="service__name">Стилизация фотосессий</span>
+              <span class="service__meta">3 000 ₽ за образ</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Готовим образы для съёмки: личной, семейной или коммерческой.
+                  Подбираю одежду и аксессуары под концепцию, локацию и освещение,
+                  чтобы в кадре всё работало вместе — поза, фактуры и цвет.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">Цена за один образ</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Стилизация фотосессий (за один образ)">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Шопинг/разбор на сезон ===== -->
+          <article class="service reveal">
+            <button class="service__head" type="button" aria-expanded="false">
+              <span class="service__index">09</span>
+              <span class="service__name">Шопинг / разбор на сезон</span>
+              <span class="service__meta">30 000 ₽</span>
+              <span class="service__toggle" aria-hidden="true"></span>
+            </button>
+            <div class="service__body">
+              <div class="service__content">
+                <p>
+                  Разбор гардероба и подбор капсулы на сезон осень-зима, весна-лето. Стилизация. <strong>Без ограничений по времени.</strong>
+Подходит тем, кто хочет полностью изменить или скорректировать свой стиль.
+                </p>
+                <div class="service__footer">
+                  <span class="service__detail">Без ограничений по времени</span>
+                  <button class="btn btn--accent btn--sm choose-service" type="button"
+                          data-name="Шопинг / разбор на сезон">Выбрать услугу</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Портфолио ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Портфолио</p>
+          <h2 class="section-title">Примеры работ</h2>
+        </div>
+
+        <div class="portfolio__filters reveal">
+          <button class="filter-btn is-active" type="button" data-filter="all">Мои работы</button>
+          <button class="filter-btn" type="button" data-filter="shop">Шопинг-сопровождение</button>
+          <button class="filter-btn" type="button" data-filter="razistil"> Разбор и стилизация гардероба</button>
+          <button class="filter-btn" type="button" data-filter="before">До / После</button>
+
+        </div>
+
+
+        <div class="portfolio__grid" id="portfolioGrid">
+
+          <figure class="portfolio__item item--wide reveal" data-category="shop" tabindex="0">
+            <img src="shop3.jpg"
+                 data-full="shop3.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="shop" tabindex="0">
+            <img src="shop2.jpg"
+                 data-full="shop2.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota1.jpg"
+                 data-full="rabota1.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item reveal" data-category="shop" tabindex="0">
+            <img src="posle1.jpg"
+                 data-full="posle1.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item reveal" data-category="razistil" tabindex="0">
+            <img src="rabota2.jpg"
+                 data-full="rabota2.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="shop" tabindex="0">
+            <img src="shop1.jpg"
+                 data-full="shop1.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="before" tabindex="0">
+            <img src="doposle.jpg"
+                 data-full="doposle.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+                   <figure class="portfolio__item item--wide reveal" data-category="shop" tabindex="0">
+            <img src="shop4.jpg"
+                 data-full="shop4.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+         <figure class="portfolio__item item--tall reveal" data-category="shop" tabindex="0">
+            <img src="shop5.jpg"
+                 data-full="shop5.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+         <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota3.jpg"
+                 data-full="rabota3.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+         <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota4.jpg"
+                 data-full="rabota4.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="shop" tabindex="0">
+            <img src="shop6.jpg"
+                 data-full="shop6.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="shop" tabindex="0">
+            <img src="shop7.jpg"
+                 data-full="shop7.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota5.jpg"
+                 data-full="rabota5.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota6.jpg"
+                 data-full="rabota6.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota7.jpg"
+                 data-full="rabota7.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota8.jpg"
+                 data-full="rabota8.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota9.jpg"
+                 data-full="rabota9.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota10.jpg"
+                 data-full="rabota10.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota11.jpg"
+                 data-full="rabota11.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota12.jpg"
+                 data-full="rabota12.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota13.jpg"
+                 data-full="rabota13.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota14.jpg"
+                 data-full="rabota14.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota15.jpg"
+                 data-full="rabota15.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota16.jpg"
+                 data-full="rabota16.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota17.jpg"
+                 data-full="rabota17.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota18.jpg"
+                 data-full="rabota18.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota19.jpg"
+                 data-full="rabota19.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota20.jpg"
+                 data-full="rabota20.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota21.jpg"
+                 data-full="rabota21.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--wide reveal" data-category="razistil" tabindex="0">
+            <img src="rabota22.jpg"
+                 data-full="rabota22.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota23.jpg"
+                 data-full="rabota23.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota24.jpg"
+                 data-full="rabota24.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota25.jpg"
+                 data-full="rabota25.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+          <figure class="portfolio__item item--tall reveal" data-category="razistil" tabindex="0">
+            <img src="rabota26.jpg"
+                 data-full="rabota26.jpg"
+                 alt="">
+            <figcaption></figcaption>
+          </figure>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ===== Контакты ===== -->
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+
+        <div class="contacts__info reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 class="section-title">Запишитесь<br>на первую встречу</h2>
+          <p class="contacts__text">
+            Напишите в Telegram или оставьте заявку в форме — отвечаю в течение дня
+            и подбираю ближайшее свободное время.
+          </p>
+
+          <ul class="contacts__list">
+            <li>
+              <span class="contacts__label">Telegram</span>
+              <a href="https://t.me/pegashevagulya" target="_blank" rel="noopener noreferrer">@pegashevagulya</a>
+            </li>
+            <li>
+              <span class="contacts__label">Instagram*</span>
+              <a href="https://www.instagram.com/pegasheva_gulya" target="_blank" rel="noopener noreferrer">@pegasheva_gulya</a>
+            </li>
+            <li>
+              <span class="contacts__label">Телефон</span>
+              <a href="tel:+79641923507">+7 (964) 192-35-07</a>
+            </li>
+            <li>
+              <span class="contacts__label">Город</span>
+              <span>Пермь · офлайн и онлайн</span>
+            </li>
+          </ul>
+          <p class="contacts__note">* Принадлежит компании Meta, признанной экстремистской и запрещённой в РФ.</p>
+        </div>
+
+        <div class="contacts__form-wrap reveal">
+          <form class="form" id="bookingForm" novalidate>
+            <h3 class="form__title">Заявка на консультацию</h3>
+
+            <div class="field">
+              <label class="field__label" for="clientName">Ваше имя</label>
+              <input class="field__input" type="text" id="clientName" name="name"
+                     placeholder="Как к вам обращаться" autocomplete="name">
+              <p class="field__error" data-error-for="clientName" hidden>Пожалуйста, укажите имя (минимум 2 символа).</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="clientContact">Ваш ник в Telegram или телефон</label>
+              <input class="field__input" type="text" id="clientContact" name="contact"
+                     placeholder="Например: @username или +7 900 000-00-00" autocomplete="tel">
+              <p class="field__error" data-error-for="clientContact" hidden>Укажите ник в Telegram или номер телефона.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="serviceSelect">Услуга</label>
+              <select class="field__input field__select" id="serviceSelect" name="service">
+                <option value="" selected disabled>Выберите услугу</option>
+                <option value="Консультация (1 час)">Консультация (1 час)</option>
+                <option value="Разбор гардероба (4 часа)">Разбор гардероба (4 часа)</option>
+                <option value="Шопинг-сопровождение (4 часа)">Шопинг-сопровождение (4 часа)</option>
+                <option value="Разбор гардероба онлайн">Разбор гардероба онлайн</option>
+                <option value="Онлайн-шопинг">Онлайн-шопинг</option>
+                <option value="Подбор образа на мероприятие">Подбор образа на мероприятие</option>
+                <option value="Карта стиля">Карта стиля</option>
+                <option value="Стилизация фотосессий (за один образ)">Стилизация фотосессий</option>
+                <option value="Шопинг / разбор на сезон">Шопинг / разбор на сезон</option>
+                <option value="Ещё не определилась">Ещё не определилась</option>
+              </select>
+              <p class="field__error" data-error-for="serviceSelect" hidden>Выберите услугу из списка.</p>
+            </div>
+            
+            <div class="field">
+  <label class="consent">
+    <input type="checkbox" id="consentCheck" name="consent">
+    <span>Согласен(а) на обработку персональных данных</span>
+  </label>
+</div>
+
+
+            <button class="btn btn--accent btn--full form__submit" type="submit">
+              Отправить заявку
+            </button>
+            <p class="form__hint">
+              После отправки откроется чат в Telegram с готовым сообщением —
+              вам останется только нажать «Отправить».
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Футер с логотипом ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__mark logo__mark--footer" aria-hidden="true">GP</span>
+        <span class="footer__name">Gulya Pegasheva · stylist</span>
+      </div>
+      <p class="footer__meta">Online / offline · Пермь и весь мир</p>
+      <p>Сайт создан @physhell - Telegram</p>
+      <a href="#hero" class="footer__up">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- ===== Лайтбокс ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фотографии">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрыть">&times;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="Просмотр фотографии">
+  </div>
+
+  <!-- ===== Уведомление об успехе ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    Заявка собрана! Открываем Telegram…
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
